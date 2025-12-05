@@ -1,0 +1,16 @@
+name: DevOps Lab CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  devops-lab:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print lab message
+        run: echo "Week 3 Day 2 - DevOps lab by Jean-Christophe"
